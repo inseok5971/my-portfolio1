@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ data.name }}의 한 페이지 소개</title>
+    <title>정인석의 한 페이지 소개</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -73,20 +73,21 @@
 
 <div class="container">
     <div class="card">
-        <h1>{{ data.name }}</h1>
-        <div class="title">{{ data.title }}</div>
+        <h1>정인석</h1>
+        <div class="title">아트적으로 코딩언어를 다룰 줄 아는 파이썬 전문가</div>
 
         <div class="section">
             <div class="section-title">👋 짧은 자기소개</div>
-            <p style="color: var(--text-sub); line-height: 1.6; font-size: 1.05rem;">{{ data.intro }}</p>
+            <p style="color: var(--text-sub); line-height: 1.6; font-size: 1.05rem;">아트적으로 코딩언어를 다를 줄 아는 파이썬 전문가가 될거야!</p>
         </div>
 
         <div class="section">
             <div class="section-title">🚀 배우고 싶은 것들</div>
             <div class="tags">
-                {% for item in data.learning %}
-                    <span class="tag">{{ item }}</span>
-                {% endfor %}
+                <span class="tag">파이썬</span>
+                <span class="tag">네트워크</span>
+                <span class="tag">자바</span>
+                <span class="tag">자바스크립트</span>
             </div>
         </div>
 
@@ -94,7 +95,7 @@
             <div class="section-title">📱 연락 및 채널</div>
             <p style="color: var(--text-sub);">
                 인스타그램: 
-                <a href="https://instagram.com/ebrio_jis_" target="_blank" class="insta-link">{{ data.instagram }}</a>
+                <a href="https://instagram.com/ebrio_jis_" target="_blank" class="insta-link">@ebrio_jis_</a>
             </p>
             <p style="color: var(--text-sub); font-size: 0.85rem; margin-top: 8px;">(연락처 및 주소는 비공개)</p>
         </div>
